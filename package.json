@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npx parcel src/index.html",
     "dev:nocache": "npx parcel src/index.html --no-cache",
-    "build": "NODE_ENV=production npx parcel build",
+    "build": "NODE_ENV=production npx parcel build src/index.html",
     "lint": "npx eslint src/**/*",
     "lint:fix": "npx eslint src/**/* --fix"
   },
