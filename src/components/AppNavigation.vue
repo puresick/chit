@@ -1,0 +1,47 @@
+<template>
+	<nav class="fixed bottom-0 h-16 w-full flex justify-around items-center shadow text-gray-600 ">
+		<router-link
+			class="bg-white hover:text-black h-full w-full flex flex-col justify-center items-center text-xs"
+			activeClass="text-black"
+			v-for="(route, index) of routes"
+			:to="route.path"
+			exact
+		>
+			<search-icon
+				v-if="index === 0"
+			>
+			</search-icon>
+			<heart-icon
+				v-else
+			>
+			</heart-icon>
+			{{ route.label}}
+		</router-link>
+	</nav>
+</template>
+
+<script>
+	import { SearchIcon, HeartIcon } from "vue-feather-icons"
+
+	export default {
+		components: {
+			HeartIcon,
+			SearchIcon
+		},
+		name: "AppNavigation",
+		data() {
+			return {
+				routes: [
+					{
+						path: "/",
+						label: "Search"
+					},
+					{
+						path: "/saved",
+						label: "Saved"
+					}
+				]
+			}
+		}
+	}
+</script>
