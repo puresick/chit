@@ -1,0 +1,15 @@
+{
+	"name": "chit eShop PWA",
+	"short_name": "chit",
+	"description": "PWA providing an alternate UI for the switch eShop",
+	"icons": [
+		{
+			"src": "../statics/icon.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"display": "fullscreen",
+	"theme_color": "#edf2f7",
+	"background_color": "#edf2f7"
+}
