@@ -1,7 +1,7 @@
 const search = async params => {
 	const { query, type } = params
 	// const server = `localhost`
-	const server = `165.22.75.165/`
+	const server = `chit.hnnng.dev`
 	// const url = `https://${server}:3333/de/${type}/${query}`
 	const url = `http://${server}/de/${type}/${query}`
 	const response = await fetch(url)
