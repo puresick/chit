@@ -1,5 +1,5 @@
 <template>
-	<li class="flex m-2 items-stretch bg-white h-40">
+	<li class="flex m-2 items-stretch bg-white h-40 overflow-hidden rounded">
 		<picture
 			class="w-32 flex flex-grow-0 flex-shrink-0"
 		>
