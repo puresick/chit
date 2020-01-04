@@ -1,5 +1,5 @@
 <template>
-	<article>
+	<article class="flex-grow">
 		<section>
 			<ul>
 				<span

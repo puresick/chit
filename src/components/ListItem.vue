@@ -1,13 +1,13 @@
 <template>
 	<li class="flex m-2 items-stretch bg-white h-40">
 		<picture
-			class="w-32 flex"
+			class="w-32 flex flex-grow-0 flex-shrink-0"
 		>
 			<source :srcset="coverImage">
 			<img :src="coverImage" class="object-cover h-full flex-shrink-0">
 		</picture>
-		<ul class="flex flex-col flex-grow p-4 justify-between">
-			<li class="text-xl font-bold">
+		<ul class="flex flex-col flex-grow p-4 justify-between overflow-hidden">
+			<li class="text-xl font-bold truncate">
 				{{ item.title }}
 			</li>
 			<!-- <li>                                                                        -->

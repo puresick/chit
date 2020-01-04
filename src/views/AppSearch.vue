@@ -1,21 +1,21 @@
 <template>
-	<article >
-		<section class="flex justify-between p-2">
+	<article class="flex-grow">
+		<section class="sticky top-0 flex justify-between px-2 pt-4">
 			<input
 				:value="searchQuery"
 				:disabled="loading"
 				@input="setSearchQuery"
 				@keyup.enter="searchNintendoApi"
-				class="bg-white shadow p-2 mr-2 rounded hover:shadow-md flex-grow"
+				class="bg-white shadow p-2 rounded hover:shadow-md flex-grow"
 			>
-			<AppButton
-				:disabled="loading"
-				:action="searchNintendoApi"
-			>
-				{{ loading ? "loading" : "search" }}
-			</AppButton>
+			<!-- <AppButton                            -->
+			<!-- 	:disabled="loading"                  -->
+			<!-- 	:action="searchNintendoApi"          -->
+			<!-- >                                     -->
+			<!-- 	{{ loading ? "loading" : "search" }} -->
+			<!-- </AppButton>                          -->
 		</section>
-		<section class="mb-20">
+		<section>
 			<ul>
 				<li
 					v-if="searchResult.length === 0"
