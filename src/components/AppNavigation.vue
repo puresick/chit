@@ -1,7 +1,7 @@
 <template>
-	<nav class="fixed bottom-0 h-16 w-full flex justify-around items-center shadow text-gray-600 ">
+	<nav class="fixed bottom-0 h-24 w-full flex justify-around items-center shadow text-gray-600 ">
 		<router-link
-			class="bg-white hover:text-black h-full w-full flex flex-col justify-center items-center text-xs"
+			class="bg-white hover:text-black h-full w-full flex flex-col items-center text-xs pt-4"
 			activeClass="text-black"
 			v-for="(route, index) of routes"
 			:to="route.path"
