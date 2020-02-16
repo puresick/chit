@@ -1,12 +1,12 @@
 <template>
 	<article class="flex-grow">
-		<section class="sticky top-0 flex justify-between p-4">
+		<section class="fixed top-0 flex justify-between p-4 w-full">
 			<input
 				:value="searchQuery"
 				:disabled="loading"
 				@input="setSearchQuery"
 				@keyup.enter="searchNintendoApi"
-				class="bg-white shadow p-2 rounded flex-grow"
+				class="bg-white p-2 rounded flex-grow border-2 border-gray-400 focus:border-gray-700"
 			>
 			<!-- <AppButton                            -->
 			<!-- 	:disabled="loading"                  -->
@@ -15,7 +15,9 @@
 			<!-- 	{{ loading ? "loading" : "search" }} -->
 			<!-- </AppButton>                          -->
 		</section>
-		<section>
+		<section
+			class="pt-16 pb-32"
+		>
 			<ul>
 				<li
 					v-if="searchResult.length === 0"

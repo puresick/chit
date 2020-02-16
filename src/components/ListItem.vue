@@ -78,7 +78,6 @@ export default {
 		},
 		price() {
 			const value = this.item.price_sorting_f
-			console.dir({ value })
 			switch (value) {
 				case 999999:
 					return "n/a"

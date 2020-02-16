@@ -1,5 +1,5 @@
 <template>
-	<nav class="sticky bottom-0 h-24 w-full flex justify-around items-center shadow text-gray-600 rounded-lg overflow-hidden">
+	<nav class="fixed bottom-0 mb-8 h-20 w-1/2 self-center flex justify-around items-center shadow text-gray-600 rounded-lg overflow-hidden">
 		<router-link
 			class="bg-white hover:text-black h-full w-full flex flex-col items-center text-xs pt-4"
 			activeClass="text-black"
