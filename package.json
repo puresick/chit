@@ -26,7 +26,6 @@
     "eslint-plugin-vue": "^5.2.3",
     "parcel-bundler": "^1.12.4",
     "tailwindcss": "^1.1.2",
-    "vue-pull-refresh": "^0.2.7",
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
