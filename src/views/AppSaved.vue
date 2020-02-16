@@ -1,6 +1,8 @@
 <template>
 	<article class="flex-grow">
-		<section>
+		<section
+			class="pb-32"
+		>
 			<ul>
 				<span
 					v-if="savedItems.length === 0"
