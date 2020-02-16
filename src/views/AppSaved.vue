@@ -1,14 +1,7 @@
 <template>
 	<article class="flex-grow">
-		<section>
-		<vue-pull-refresh
-			:on-refresh="getSavedItemsFromLocalStorage"
-			:config="{
-				startLabel: 'pull to refresh',
-				readyLabel: 'release to refresh',
-				loadingLabel: 'loading',
-				errorLabel: 'error'
-			}"
+		<section
+			class="pb-32"
 		>
 			<ul>
 				<span
@@ -23,22 +16,19 @@
 					action-label="remove"
 				/>
 			</ul>
-		</vue-pull-refresh>
 		</section>
 	</article>
 </template>
 
 <script>
 import { mapState, mapMutations, mapActions } from "vuex"
-import VuePullRefresh from "vue-pull-refresh"
 
 import ListItem from "../components/ListItem"
 
 export default {
 	name: "AppSaved",
 	components: {
-		ListItem,
-		VuePullRefresh
+		ListItem
 	},
 	computed: {
 		...mapState([
