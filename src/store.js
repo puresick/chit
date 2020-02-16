@@ -89,7 +89,7 @@ const store = new Vuex.Store({
 		getSavedItemsFromLocalStorage: async ({ commit, dispatch }) => {
 			const ids = localStorage.getItem("savedItems")
 			const items = []
-			if (!!ids) {
+			if (ids) {
 				const idCollection = ids.split(",")
 
 				for (const id of idCollection) {
