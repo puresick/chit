@@ -36,5 +36,7 @@ export default {
 
 	html, body {
 		height: 100%;
+		@apply
+			bg-gray-200;
 	}
 </style>
