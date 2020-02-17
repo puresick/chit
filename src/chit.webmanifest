@@ -4,9 +4,28 @@
 	"description": "PWA providing an alternate UI for the switch eShop",
 	"icons": [
 		{
-			"src": "../statics/icon.png",
-			"sizes": "512x512",
-			"type": "image/png"
+			"src": "../statics/icon.svg",
+			"sizes": "48x48"
+		},
+		{
+			"src": "../statics/icon.svg",
+			"sizes": "72x72"
+		},
+		{
+			"src": "../statics/icon.svg",
+			"sizes": "96x96"
+		},
+		{
+			"src": "../statics/icon.svg",
+			"sizes": "144x144"
+		},
+		{
+			"src": "../statics/icon.svg",
+			"sizes": "168x168"
+		},
+		{
+			"src": "../statics/icon.svg",
+			"sizes": "192x192"
 		}
 	],
 	"display": "fullscreen",
