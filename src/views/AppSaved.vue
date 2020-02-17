@@ -17,18 +17,29 @@
 				/>
 			</ul>
 		</section>
+		<AppButton
+			float
+			class="fixed bottom-0 right-0 mr-8 mb-8"
+			:action="getSavedItemsFromLocalStorage"
+		>
+			<refresh-cw-icon />
+		</AppButton>
 	</article>
 </template>
 
 <script>
 import { mapState, mapMutations, mapActions } from "vuex"
+import { RefreshCwIcon } from "vue-feather-icons"
 
+import AppButton from "../components/AppButton"
 import ListItem from "../components/ListItem"
 
 export default {
 	name: "AppSaved",
 	components: {
-		ListItem
+		AppButton,
+		ListItem,
+		RefreshCwIcon
 	},
 	computed: {
 		...mapState([
