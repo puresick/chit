@@ -21,6 +21,7 @@
 			float
 			class="fixed bottom-0 right-0 mr-8 mb-8"
 			:action="getSavedItemsFromLocalStorage"
+			:loading="loading"
 		>
 			<refresh-cw-icon />
 		</AppButton>
@@ -43,6 +44,7 @@ export default {
 	},
 	computed: {
 		...mapState([
+			"loading",
 			"savedItems"
 		])
 	},

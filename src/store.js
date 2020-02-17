@@ -87,6 +87,7 @@ const store = new Vuex.Store({
 			commit("isLoading", false)
 		},
 		getSavedItemsFromLocalStorage: async ({ commit, dispatch }) => {
+			commit("isLoading", true)
 			const ids = localStorage.getItem("savedItems")
 			const items = []
 			if (ids) {
@@ -103,6 +104,7 @@ const store = new Vuex.Store({
 			}
 
 			commit("setSavedItems", items)
+			commit("isLoading", false)
 		}
 	}
 })

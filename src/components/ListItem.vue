@@ -1,5 +1,10 @@
 <template>
-	<li class="flex m-2 items-stretch bg-white h-40 overflow-hidden rounded">
+	<li
+		class="flex m-2 items-stretch bg-white h-40 overflow-hidden rounded"
+		:class="{
+			'opacity-50': loading
+		}"
+	>
 		<picture
 			class="w-32 flex flex-grow-0 flex-shrink-0"
 		>
@@ -68,6 +73,7 @@ export default {
 	},
 	computed: {
 		...mapState([
+			"loading",
 			"savedItems"
 		]),
 		coverImage() {
