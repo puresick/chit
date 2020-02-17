@@ -1,8 +1,8 @@
 <template>
-	<nav class="fixed bottom-0 mb-8 h-20 w-1/2 self-center flex justify-around items-center shadow text-gray-600 rounded-lg overflow-hidden">
+	<nav class="fixed bottom-0 mb-8 h-12 w-1/3 self-center flex justify-around items-center shadow text-gray-600 rounded-full overflow-hidden">
 		<router-link
-			class="bg-white hover:text-black h-full w-full flex flex-col items-center text-xs pt-4"
-			activeClass="text-black"
+			class="bg-white hover:text-black h-full w-full flex flex-col items-center justify-center text-xs"
+			activeClass="text-white bg-blue-600"
 			v-for="(route, index) of routes"
 			:to="route.path"
 			exact
@@ -15,7 +15,6 @@
 				v-else
 			>
 			</heart-icon>
-			{{ route.label}}
 		</router-link>
 	</nav>
 </template>
