@@ -1,6 +1,6 @@
 <template>
 	<li
-		class="flex m-2 items-stretch bg-white h-40 overflow-hidden rounded"
+		class="item flex mx-2 mt-2 mb-4 items-stretch bg-white h-40 overflow-hidden border-2 border-gray-300"
 		:class="{
 			'opacity-50': loading
 		}"
@@ -113,4 +113,8 @@ export default {
 </script>
 
 <style scoped>
+	.item {
+		box-shadow: 0 0.3rem 0 0.2rem #edf2f7;
+		border-radius: 2rem;
+	}
 </style>

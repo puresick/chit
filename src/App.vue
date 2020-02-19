@@ -1,5 +1,5 @@
 <template>
-	<article class="min-h-full flex flex-col bg-gray-200">
+	<article class="min-h-full flex flex-col bg-gray-100">
 		<router-view />
 		<AppNavigation />
 	</article>
