@@ -20,20 +20,20 @@
   },
   "homepage": "",
   "devDependencies": {
-    "@vue/component-compiler-utils": "^3.0.0",
-    "autoprefixer": "^9.6.5",
+    "@vue/component-compiler-utils": "^3.1.1",
+    "autoprefixer": "^9.7.4",
     "eslint": "^6.8.0",
     "eslint-plugin-vue": "^5.2.3",
     "parcel-bundler": "^1.12.4",
-    "tailwindcss": "^1.1.2",
-    "vue-template-compiler": "^2.6.10"
+    "tailwindcss": "^1.2.0",
+    "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
     "views": "^1.0.2",
-    "vue": "^2.6.10",
+    "vue": "^2.6.11",
     "vue-feather-icons": "^5.0.0",
     "vue-hot-reload-api": "^2.3.4",
-    "vue-router": "^3.1.3",
-    "vuex": "^3.1.1"
+    "vue-router": "^3.1.5",
+    "vuex": "^3.1.2"
   }
 }
