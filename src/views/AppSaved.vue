@@ -19,7 +19,7 @@
 		</section>
 		<AppButton
 			float
-			class="fixed bottom-0 right-0 mr-8 mb-8"
+			class="fixed bottom-0 right-0 mr-12 mb-16"
 			:action="getSavedItemsFromLocalStorage"
 			:loading="loading"
 		>
