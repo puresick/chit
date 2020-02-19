@@ -6,7 +6,7 @@
 				:disabled="loading"
 				@input="setSearchQuery"
 				@keyup.enter="searchNintendoApi"
-				class="bg-white p-2 rounded flex-grow border-2 border-gray-400 focus:border-gray-700"
+				class="bg-white p-2 rounded-full flex-grow border-4 border-gray-500 focus:border-gray-700"
 			>
 			<!-- <AppButton                            -->
 			<!-- 	:disabled="loading"                  -->

@@ -45,7 +45,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	@media(hover: hover) and (pointer: fine) {
 		a:hover {
 			color: black !important;
