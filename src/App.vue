@@ -33,12 +33,12 @@ export default {
 		@apply text-2xl;
 	}
 
-	@tailwind components;
-	@tailwind utilities;
-
 	html, body {
 		height: 100%;
 		@apply
 			bg-gray-200;
 	}
+
+	@tailwind components;
+	@tailwind utilities;
 </style>
