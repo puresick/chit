@@ -1,5 +1,5 @@
 <template>
-	<article class="min-h-full flex flex-col bg-gray-100">
+	<article class="min-h-full flex flex-col bg-gray-100 max-w-screen-sm">
 		<router-view />
 		<AppButton
 			v-if="$route.path === '/saved'"

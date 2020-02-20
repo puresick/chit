@@ -1,12 +1,12 @@
 <template>
 	<article class="flex-grow">
-		<section class="fixed top-0 flex justify-between p-4 w-full">
+		<section class="sticky top-0 justify-between p-4">
 			<input
 				:value="searchQuery"
 				:disabled="loading"
 				@input="setSearchQuery"
 				@keyup.enter="searchNintendoApi"
-				class="bg-white p-2 rounded-full flex-grow border-4 border-gray-500 focus:border-gray-700"
+				class="bg-white p-2 rounded-full flex-grow border-4 border-gray-500 focus:border-gray-700 w-full"
 			>
 			<!-- <AppButton                            -->
 			<!-- 	:disabled="loading"                  -->
