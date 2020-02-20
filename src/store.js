@@ -104,8 +104,9 @@ const store = new Vuex.Store({
 			}
 
 			commit("setSavedItems", items)
-			setTimeout(() => {
+			const timeout = setTimeout(() => {
 				commit("isLoading", false)
+				clearTimeout(timeout)
 			}, 800)
 		}
 	}
