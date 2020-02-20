@@ -41,6 +41,9 @@ export default {
 			"getSavedItemsFromLocalStorage",
 			"removeItem"
 		])
+	},
+	mounted() {
+		this.getSavedItemsFromLocalStorage()
 	}
 }
 </script>

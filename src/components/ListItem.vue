@@ -1,9 +1,6 @@
 <template>
 	<li
 		class="item flex mx-2 mt-2 mb-4 items-stretch bg-white h-40 overflow-hidden border-2 border-gray-300"
-		:class="{
-			'opacity-50': loading
-		}"
 	>
 		<picture
 			class="w-32 flex flex-grow-0 flex-shrink-0"
@@ -15,11 +12,6 @@
 			<li class="text-xl font-bold truncate">
 				{{ item.title }}
 			</li>
-			<!-- <li>                                                                        -->
-			<!-- 	<p v-if="item.price_sorting_f === 999999">&nbsp;</p>                       -->
-			<!-- 	<p v-else-if="item.price_has_discount_b" class="text-red-400">on sale!</p> -->
-			<!-- 	<p v-else class="text-gray-400">regular price</p>                          -->
-			<!-- </li>                                                                       -->
 			<li
 				class="text-right text-2xl font-bold"
 				:class="{ 'text-red-600': item.price_has_discount_b }"

@@ -1,15 +1,15 @@
 <template>
 	<article class="min-h-full flex flex-col bg-gray-100 max-w-screen-sm">
 		<router-view />
-		<AppButton
-			v-if="$route.path === '/saved'"
-			float
-			class="fixed bottom-0 mb-32 self-center"
-			:action="getSavedItemsFromLocalStorage"
-			:loading="loading"
-		>
-			<refresh-cw-icon />
-		</AppButton>
+		<!-- <AppButton                                -->
+		<!-- 	v-if="$route.path === '/saved'"          -->
+		<!-- 	float                                    -->
+		<!-- 	class="fixed bottom-0 mb-32 self-center" -->
+		<!-- 	:action="getSavedItemsFromLocalStorage"  -->
+		<!-- 	:loading="loading"                       -->
+		<!-- >                                         -->
+		<!-- 	<refresh-cw-icon />                      -->
+		<!-- </AppButton>                              -->
 		<AppNavigation />
 	</article>
 </template>
