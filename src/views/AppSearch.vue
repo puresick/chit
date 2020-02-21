@@ -1,6 +1,6 @@
 <template>
 	<article class="flex-grow">
-		<section class="sticky top-0 justify-between p-4">
+		<section class="fixed top-0 justify-between p-4 w-full max-w-screen-sm">
 			<input
 				:value="searchQuery"
 				:disabled="loading"
