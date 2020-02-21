@@ -16,15 +16,14 @@
 			<!-- </AppButton>                          -->
 		</section>
 		<section
-			class="pt-16 pb-32"
+			class="flex flex-col items-center pt-16 pb-32"
 		>
-			<ul>
-				<li
-					v-if="searchResult.length === 0"
-					class="flex m-2 p-2 justify-center text-gray-500"
-				>
-					no results
-				</li>
+			<AppLoading
+				v-if="loading"
+			/>
+			<ul
+				class="w-full"
+			>
 				<ListItem
 					v-for="item in searchResult"
 					:item="item"
@@ -36,13 +35,16 @@
 
 <script>
 import { mapState, mapMutations, mapActions } from "vuex"
+
 import AppButton from "../components/AppButton"
+import AppLoading from "../components/AppLoading"
 import ListItem from "../components/ListItem"
 
 export default {
 	name: "AppSearch",
 	components: {
 		AppButton,
+		AppLoading,
 		ListItem
 	},
 	computed: {
