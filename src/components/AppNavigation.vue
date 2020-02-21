@@ -1,5 +1,5 @@
 <template>
-	<nav class="fixed bottom-0 mb-16 h-12 w-1/3 self-center flex justify-around items-center bg-white text-gray-600 rounded-full overflow-hidden border-gray-300 border-2">
+	<nav class="fixed bottom-0 mb-16 h-12 w-48 self-center flex justify-around items-center bg-white text-gray-600 rounded-full overflow-hidden border-gray-300 border-2">
 		<router-link
 			class="bg-white h-full w-full flex flex-col items-center justify-center text-xs rounded-full"
 			activeClass="text-white bg-blue-600"
