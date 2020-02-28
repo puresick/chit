@@ -1,6 +1,6 @@
 <template>
 	<li
-		class="item flex mx-2 mt-2 mb-4 items-stretch bg-white h-40 overflow-hidden border-2 border-gray-300"
+		class="item flex mx-2 mt-2 mb-4 items-stretch bg-white h-40 overflow-hidden border-2 border-gray-300 rounded-lg"
 	>
 		<picture
 			class="w-32 flex flex-grow-0 flex-shrink-0"
@@ -103,10 +103,3 @@ export default {
 	}
 }
 </script>
-
-<style scoped>
-	.item {
-		box-shadow: 0 0.3rem 0 0.2rem #edf2f7;
-		border-radius: 2rem;
-	}
-</style>

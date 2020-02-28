@@ -2,11 +2,11 @@
 	<article class="flex-grow">
 		<section class="fixed top-0 justify-between p-4 w-full max-w-screen-sm">
 			<input
-				:value="searchQuery"
+				v-model="query"
+				placeholder="enter search ..."
 				:disabled="loading"
-				@input="setSearchQuery"
-				@keyup.enter="searchNintendoApi"
-				class="bg-white p-2 rounded-full flex-grow border-4 border-gray-500 focus:border-gray-700 w-full"
+				@keyup.enter="search"
+				class="placeholder-gray-700 bg-gray-400 p-2 rounded-lg flex-grow border-2 border-gray-500 focus:border-gray-700 w-full"
 			>
 			<!-- <AppButton                            -->
 			<!-- 	:disabled="loading"                  -->
@@ -47,6 +47,11 @@ export default {
 		AppLoading,
 		ListItem
 	},
+	data() {
+		return {
+			query: ""
+		}
+	},
 	computed: {
 		...mapState([
 			"loading",
@@ -61,7 +66,10 @@ export default {
 		]),
 		...mapActions([
 			"searchNintendoApi"
-		])
+		]),
+		search() {
+			this.searchNintendoApi(this.query)
+		}
 	}
 }
 </script>

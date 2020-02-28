@@ -11,7 +11,7 @@ const store = new Vuex.Store({
 	strict: process.env.NODE_ENV !== "production",
 	state: {
 		loading: false,
-		searchQuery: "",
+		searchQuery: "enter search",
 		searchResult: [],
 		savedItems: []
 	},
@@ -67,8 +67,9 @@ const store = new Vuex.Store({
 				dispatch("saveItem", item)
 			}
 		},
-		searchNintendoApi: async ({ commit, state }) => {
-			const { searchQuery } = state
+		searchNintendoApi: async ({ commit, state }, query) => {
+			// const { searchQuery } = state
+			const searchQuery = query
 
 			commit("setSearchResult", [])
 			commit("isLoading", true)
