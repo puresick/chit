@@ -1,5 +1,5 @@
 <template>
-	<article class="min-h-full flex flex-col max-w-screen-sm">
+	<article class="min-h-full w-full flex flex-col max-w-screen-sm">
 		<router-view />
 		<AppNavigation />
 	</article>
@@ -29,6 +29,13 @@ export default {
 		height: 100%;
 		@apply
 			bg-gray-100;
+	}
+
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
 	}
 
 	@tailwind components;
