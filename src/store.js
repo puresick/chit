@@ -68,17 +68,14 @@ const store = new Vuex.Store({
 			}
 		},
 		searchNintendoApi: async ({ commit, state }, query) => {
-			// const { searchQuery } = state
-			const searchQuery = query
-
 			commit("setSearchResult", [])
 			commit("isLoading", true)
 
-			if (searchQuery === "") {
+			if (query === "") {
 				commit("setSearchResult", [])
 			} else {
 				const result = await search({
-					query: searchQuery,
+					query,
 					type: "title"
 				})
 
